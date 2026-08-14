@@ -10,4 +10,5 @@ int main(){
     b = c;
     printf("%f %f", a ,b);
     return 0;
+    
 }

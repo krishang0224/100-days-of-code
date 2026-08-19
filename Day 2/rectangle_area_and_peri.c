@@ -11,7 +11,7 @@ int main() {
     float perimeter = 2 * (length + breadth);
 
     printf("Area: %f", area);
-    printf("Perimeter: %f", perimeter);
+    printf(",Perimeter: %f", perimeter);
 
     return 0;
 }

@@ -10,8 +10,11 @@ int main(){
     int x;
     printf("Enter units:");
     scanf("%d",&x);
-    if(x<=100){
-    int bill = x*5;
+    if(x<0){
+        printf("Invalid units");
+    }
+    else if(x<=100){
+        int bill = x*5;
         printf("Bill: %d",bill);
     }
     else if(x<=200){
@@ -24,7 +27,7 @@ int main(){
     }
     else if(x>300){
         int bill = (x-300)*12;
-        printf("Bill %d",bill+2300);
+        printf("Bill %d",bill+2200);
     }
     return 0;
 }

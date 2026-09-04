@@ -9,6 +9,6 @@ int main(){
     float SI = (Pa*t*r)/100;
     float CI = Pa*pow(1+r/100,t)-Pa;
     printf("Simple interest is: %.2f, ",SI);
-    printf("Compount interest is: %.2f",CI);
+    printf("Compound interest is: %.2f",CI);
     return 0;
 }

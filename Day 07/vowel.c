@@ -8,8 +8,11 @@ int main(){
         x == 'A' || x == 'E' || x == 'I' || x == 'O' || x == 'U') {
         printf("%c is vowel",x);
     }
-    else{
+    else if ((x >= 'a' && x <= 'z') || (x >= 'A' && x <= 'Z')){
         printf("%c is consonant",x);
+    }
+    else{
+        printf("%c is not an alphabet",x);
     }
     return 0;
 }

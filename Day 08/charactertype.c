@@ -14,7 +14,7 @@ int main(){
         printf("%c digit",x);
     }
     else{
-        printf("%c speical character",x);
+        printf("%c special character",x);
     }
     return 0;
 }

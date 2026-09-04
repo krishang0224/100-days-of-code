@@ -22,7 +22,10 @@ int main() {
         printf("Roots are real and equal: %.2f\n", x);
     } 
     else {
-        printf("roots are complex\n");
+        float real = -b / (2 * a);
+        float imaginary = sqrt(-D) / fabs(2 * a);
+        printf("roots are complex: %.2f + %.2fi, %.2f - %.2fi\n",
+               real, imaginary, real, imaginary);
     }
     return 0;
 }

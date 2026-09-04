@@ -4,11 +4,14 @@ int main(){
     int x,y;
     printf("Enter cost price and selling price: ");
     scanf("%d %d",&x,&y);
-    if(x == y){
+    if(x <= 0 || y < 0){
+        printf("Invalid price");
+    }
+    else if(x == y){
         printf("No loss No Profit");
     }
     else if(x > y){
-        float p = (((x-y)*100))/x;
+        float p = ((x-y)*100.0)/x;
         printf("Loss is: %.2f%%",p);
     }
     else if(y>x){

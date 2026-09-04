@@ -10,7 +10,10 @@ int main(){
     int x;
     printf("Enter days: ");
     scanf("%d",&x);
-    if(x<=5){
+    if(x<0){
+        printf("Invalid number of days");
+    }
+    else if(x<=5){
         int fees = x*2;
         printf("Fine %d",fees);
     }

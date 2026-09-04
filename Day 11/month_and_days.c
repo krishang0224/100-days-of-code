@@ -31,6 +31,7 @@ int main(){
             break;
         case 12: printf("December,31 days");
             break;
+        default: printf("Invalid month number");
     }
     return 0;
 }

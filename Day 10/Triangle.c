@@ -13,11 +13,11 @@ int main(){
             printf("Triangle is scalene\n");
         }
         else if(x == y || y == z || x == z){
-            printf("Triangle is isoceles\n");
+            printf("Triangle is isosceles\n");
         }
     }
     else{
-        printf("triangle is inavlid");
+        printf("triangle is invalid");
     }
     return 0;
 }

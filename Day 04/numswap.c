@@ -1,12 +1,14 @@
+// Write a program to swap two numbers without using a third variable.
 #include <stdio.h>
 
 int main(){
-    float a;
-    float b;
-    scanf("%f %f", &a , &b);
-    float temp = a;
-    a = b;
-    b = temp;
-    printf("%.2f %.2f", a , b);
+    int a, b;
+    scanf("%d %d", &a, &b);
+
+    a = a + b;
+    b = a - b;
+    a = a - b;
+
+    printf("%d %d\n", a, b);
     return 0;
 }

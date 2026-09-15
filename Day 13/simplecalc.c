@@ -1,45 +1,40 @@
+// Write a program to implement a basic calculator using switch-case for +, -, *, /, %.
 #include <stdio.h>
 
-int main() {
-    int x, y, z;
-    printf("Enter 1-Addition, 2-Subtraction, 3-Multiplication, 4-Division, 5-Modulus\n");
-    scanf("%d", &x);
-    
-    printf("Enter your 2 numbers: ");
-    scanf("%d %d", &y, &z);  
-    switch (x) {
-        case 1: {
-            printf("Sum is %d\n", y + z);
+int main(){
+    int a, b;
+    char operation;
+    scanf("%d %d %c", &a, &b, &operation);
+
+    switch(operation){
+        case '+':
+            printf("%d\n", a + b);
             break;
-        }
-        case 2: {
-            printf("Subtraction is %d\n", y - z);
+        case '-':
+            printf("%d\n", a - b);
             break;
-        }
-        case 3: {
-            printf("Multiplication is %d\n", y * z);
+        case '*':
+            printf("%d\n", a * b);
             break;
-        }
-        case 4: {
-            if (z == 0) {
-                printf("Error: Division by zero\n");
-            } else {
-                float div = (1.0 * y) / z;
-                printf("Division is %.2f\n", div);
+        case '/':
+            if(b == 0){
+                printf("Cannot divide by zero\n");
+            }
+            else{
+                printf("%d\n", a / b);
             }
             break;
-        }
-        case 5: {
-            if (z == 0) {
-                printf("Error: Modulus by zero\n");
-            } else {
-                printf("Modulus is %d\n", y % z);
+        case '%':
+            if(b == 0){
+                printf("Cannot divide by zero\n");
+            }
+            else{
+                printf("%d\n", a % b);
             }
             break;
-        }
         default:
-            printf("Invalid choice\n");
-            break;
+            printf("Invalid operator\n");
     }
+
     return 0;
 }

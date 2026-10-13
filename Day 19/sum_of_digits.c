@@ -4,16 +4,11 @@
 int main(){
     long long n, sum = 0;
     scanf("%lld", &n);
-
-    if(n < 0){
-        n = -n;
+    unsigned long long digits = n < 0 ? -(unsigned long long)n : (unsigned long long)n;
+    while(digits > 0){
+        sum += digits % 10;
+        digits /= 10;
     }
-
-    while(n > 0){
-        sum += n % 10;
-        n /= 10;
-    }
-
     printf("%lld\n", sum);
     return 0;
 }

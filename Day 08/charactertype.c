@@ -5,16 +5,16 @@ int main(){
     char x;
     scanf("%c",&x);
     if(x >= 'A' && x <= 'Z'){
-        printf("%c uppercase alphabet",x);
+        printf("Uppercase alphabet\n");
     }
     else if(x >='a' && x <= 'z'){
-        printf("%c lowercase alphabet",x);
+        printf("Lowercase alphabet\n");
     }
     else if(x >='0' && x <='9'){
-        printf("%c digit",x);
+        printf("Digit\n");
     }
     else{
-        printf("%c special character",x);
+        printf("Special character\n");
     }
     return 0;
 }

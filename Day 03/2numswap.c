@@ -8,7 +8,6 @@ int main(){
     c = a;
     a = b;
     b = c;
-    printf("%f %f", a ,b);
+    printf("After swap: %g %g\n", a,b);
     return 0;
-    
 }

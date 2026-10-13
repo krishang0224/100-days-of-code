@@ -1,4 +1,4 @@
-// Write a program to check if a number is a palindrome. 
+// Write a program to check if a number is a palindrome.
 
 #include <stdio.h>
 
@@ -8,7 +8,7 @@ int main(){
     scanf("%d",&x);
     int org = x;
     if(x<0){
-        printf("%d is not palindrome\n",org);
+        printf("Not palindrome\n");
         return 0;
     }
     while(x>0){
@@ -17,10 +17,10 @@ int main(){
         rev = rev*10+y;
     }
     if(rev==org){
-        printf("%d is palindrome\n",org);
+        printf("Palindrome\n");
     }
     else{
-        printf("%d is not palindrome\n",org);
+        printf("Not palindrome\n");
     }
     return 0;
 }

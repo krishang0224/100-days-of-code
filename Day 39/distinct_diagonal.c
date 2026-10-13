@@ -4,13 +4,15 @@
 int main(){
     int rows, columns, matrix[100][100], distinct = 1;
     scanf("%d %d", &rows, &columns);
-
+    if(rows < 1 || rows > 100 || columns < 1 || columns > 100){
+        printf("Invalid size\n");
+        return 0;
+    }
     for(int i = 0; i < rows; i++){
         for(int j = 0; j < columns; j++){
             scanf("%d", &matrix[i][j]);
         }
     }
-
     if(rows != columns){
         distinct = 0;
     }
@@ -23,13 +25,11 @@ int main(){
             }
         }
     }
-
     if(distinct){
         printf("True\n");
     }
     else{
         printf("False\n");
     }
-
     return 0;
 }

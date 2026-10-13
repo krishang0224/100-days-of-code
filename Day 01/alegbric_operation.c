@@ -3,18 +3,14 @@
 #include <stdio.h>
 
 int main(){
-    float a ,b;
-    printf("Enter 2 numbers: ");
-    scanf("%f %f", &a ,&b);
-    float sum = a +b;
-    float diff = a-b;
-    float pro = a *b;
-    printf("Sum: %g\n", sum);
-    printf("Difference: %g\n", diff);
-    printf("Product: %g\n", pro);
+    int a,b;
+    scanf("%d %d", &a, &b);
+    int sum = a+b;
+    int diff = a-b;
+    int pro = a*b;
     if (b!= 0){
-        float quo = a/b;
-        printf("Quotient: %g\n", quo);
+        int quo = a/b;
+        printf("Sum=%d, Diff=%d, Product=%d, Quotient=%d\n", sum, diff, pro, quo);
     }
     else{
         printf("cannot be divided by 0");

@@ -5,7 +5,6 @@ int main(){
     int a, b;
     char operation;
     scanf("%d %d %c", &a, &b, &operation);
-
     switch(operation){
         case '+':
             printf("%d\n", a + b);
@@ -35,6 +34,5 @@ int main(){
         default:
             printf("Invalid operator\n");
     }
-
     return 0;
 }

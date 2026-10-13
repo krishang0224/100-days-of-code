@@ -18,7 +18,6 @@ int main(){
         }
         printf("\n");
     }
-
     for(int i = 3; i >= 1; i--){
         for(int space = 1; space <= 4 - i; space++){
             printf(" ");
@@ -28,6 +27,5 @@ int main(){
         }
         printf("\n");
     }
-
     return 0;
 }

@@ -6,10 +6,10 @@ int main(){
     scanf("%c",&x);
     if (x == 'a' || x == 'e' || x == 'i' || x == 'o' || x == 'u' ||
         x == 'A' || x == 'E' || x == 'I' || x == 'O' || x == 'U') {
-        printf("%c is vowel",x);
+        printf("Vowel\n");
     }
     else if ((x >= 'a' && x <= 'z') || (x >= 'A' && x <= 'Z')){
-        printf("%c is consonant",x);
+        printf("Consonant\n");
     }
     else{
         printf("%c is not an alphabet",x);

@@ -8,7 +8,6 @@ int main(){
     scanf("%f %f %f",&Pa, &r,&t);
     float SI = (Pa*t*r)/100;
     float CI = Pa*pow(1+r/100,t)-Pa;
-    printf("Simple interest is: %.2f, ",SI);
-    printf("Compound interest is: %.2f",CI);
+    printf("Simple Interest=%g, Compound Interest=%g\n",SI,CI);
     return 0;
 }

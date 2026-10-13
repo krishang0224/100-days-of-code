@@ -6,7 +6,6 @@ int main(){
     int x;
     scanf("%d",&x);
     int sum = x*(x+1)/2;
-    printf("%d",sum);
+    printf("Sum=%d\n",sum);
     return 0;
-
 }

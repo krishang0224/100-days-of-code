@@ -4,21 +4,14 @@
 int main(){
     long long n, product = 1;
     scanf("%lld", &n);
-
-    if(n < 0){
-        n = -n;
-    }
-
-    while(n > 0){
-        int digit = n % 10;
-
+    unsigned long long digits = n < 0 ? -(unsigned long long)n : (unsigned long long)n;
+    while(digits > 0){
+        int digit = digits % 10;
         if(digit % 2 != 0){
             product *= digit;
         }
-
-        n /= 10;
+        digits /= 10;
     }
-
     printf("%lld\n", product);
     return 0;
 }
